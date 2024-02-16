@@ -21,7 +21,7 @@ int main() {
     getline(cin, (apuntador + i)->nombre);
     cout << "Ingrese el código del estudiante " << i + 1 << ": "; 
     cin >> (apuntador + i)->codigo;
-    cin.ignore(); // Ignorar el salto de línea después de leer el código
+    cin.ignore(); 
     for (int j = 0; j < 3; j++) {
       cout << "Ingrese la nota " << j + 1 << " del estudiante " << (apuntador + i)->nombre << ": ";
       cin >> (apuntador + i)->nota[j];
